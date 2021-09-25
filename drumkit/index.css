@@ -1,0 +1,49 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    height: 45vw;
+    width: 100vw;
+    background-image: url(sunset.png);
+    background-size: 100% 100%;
+}
+.keys{
+    width:95%;
+    position: relative;
+    top:45vh;
+    height: 20vh;
+    display:flex;
+    margin: 0 auto;
+    border:2px solid red;
+    justify-content: space-between;
+    align-items: center;
+}
+.key
+{
+    border-radius: 0.5rem;
+    border: 0.4rem solid gray;
+    height: 80%;
+    width: 10%;
+    text-align: center;
+    background-color: rgba(red, green, blue, alpha);
+    transition: all 0.07s ease;
+    
+}
+kbd{
+    display: block;
+    font-size:4rem ;
+}
+span{
+    font-size:2rem;
+    color: blue;
+    text-transform: inherit;
+}
+.playing
+{
+    transform: scale(1.1);
+    border-color:yellow ;
+    box-shadow: springgreen;
+}

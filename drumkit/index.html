@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="keys">
+        <div class="key" data-key="65">
+            <kbd>A</kbd>
+            <span>Gojo</span>
+        </div>
+        <div class="key" data-key="83">
+            <kbd>S</kbd>
+            <span>Aokiji</span>
+        </div>
+        <div class="key" data-key="68">
+            <kbd>D</kbd>
+            <span>Brook</span>
+        </div>
+        <div class="key" data-key="70">
+            <kbd>F</kbd>
+            <span>Eren</span>
+        </div>
+        <div class="key" data-key="71">
+            <kbd>G</kbd>
+            <span>Akeno</span>
+        </div>
+        <div class="key" data-key="72">
+            <kbd>H</kbd>
+            <span>Yamete</span>
+        </div>
+        <div class="key" data-key="74">
+            <kbd>J</kbd>
+            <span>Chopper!</span>
+        </div>
+        <div class="key" data-key="75">
+            <kbd>K</kbd>
+            <span>I kill you</span>
+        </div>
+        <div class="key" data-key="76">
+            <kbd>L</kbd>
+            <span>Daddy</span>
+        </div>
+    </div>
+    <audio data-key="65" src="Music/yowai-mo-gojo.mp3"></audio>
+    <audio data-key="83" src="Music/aokiji.mp3"></audio>
+    <audio data-key="68" src="Music/brook-laughs-at-sanji.mp3"></audio>
+    <audio data-key="70" src="Music/eren yeagerrr.mp3"></audio>
+    <audio data-key="71" src="Music/ara-ara-akeno-for-ringtone.mp3"></audio>
+    <audio data-key="72" src="Music/yametekudasai_Yk4KLcK.mp3"></audio>
+    <audio data-key="74" src="Music/luffy-imita-a-chopper-2.mp3"></audio>
+    <audio data-key="75" src="Music/ikillyou.mp3"></audio>
+    <audio data-key="76" src="Music/yes-daddy_tx1Pk0Y.mp3"></audio>
+
+    <script>
+        window.addEventListener("keydown",(e)=>
+        {
+var audio=document.querySelector(`audio[data-key="${e.keyCode}"]`)
+var key=document.querySelector(`.key[data-key="${e.keyCode}"]`)
+if(audio)
+{
+    audio.play()
+    audio.currentTime=0
+    key.classList.add("playing")
+}
+return
+        })
+        var kk=document.querySelectorAll(".key")
+        kk.forEach((e)=>
+        {
+           e.addEventListener('transitionend',remove) 
+        })
+        function remove(k)
+        {
+if(k.propertyName="transform")
+{
+    this.classList.remove("playing")
+}
+return             
+        }
+    </script>
+</body>
+</html>
