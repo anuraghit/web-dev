@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">Learn C++ Programming</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="index.html" class="nav__link nav__logo">
+                        <span class="nav__logo-name">C Programming</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            
+                            <div class="nav__dropdown">
+                                <a href="intro.html" class="nav__link">
+                                    <span class="nav__name">Introduction</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">basic I/O</a>
+                                        <a href="#" class="nav__dropdown-item">Operators</a>
+                                        <a href="#" class="nav__dropdown-item">Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="flow-control.html" class="nav__link">
+                                    <span class="nav__name">Flow Control</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">if...else</a>
+                                        <a href="#" class="nav__dropdown-item">for loop</a>
+                                        <a href="#" class="nav__dropdown-item">while loop</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="function.html" class="nav__link">
+                                    <span class="nav__name">Functions</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">function types</a>
+                                        <a href="#" class="nav__dropdown-item">user-defined function</a>
+                                        <a href="#" class="nav__dropdown-item">Standard Library Functions</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="array.html" class="nav__link">
+                                    <span class="nav__name">Programming Arrays</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming arrays</a>
+                                        <a href="#" class="nav__dropdown-item">multi-dimensional arrays</a>
+                                        <a href="#" class="nav__dropdown-item">arrays & function</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <H1>Introduction</H1>
+                <h2>C Input Output (I/O)</h2>
+                <p>In this tutorial, you will learn to use scanf() function to take input from the user, and printf() function to display output to the user.</p>
+                <p><b>C Output</b></p>
+                <p>In C programming, printf() is one of the main output function. The function sends formatted output to the screen. For example,</p>
+                <p><b>Example 1: C Output</b></p>
+                <pre>
+                    #include <stdio.h>    
+                        int main()
+                        { 
+                            // Displays the string inside quotations
+                            printf("C Programming");
+                            return 0;
+                        }
+                </pre>
+                <p><b>Output- </b>C Programming</p>
+                <p><b>Example 2: Integer Output</b></p>
+                <pre>#include <stdio.h>
+                    int main()
+                    {
+                        int testInteger = 5;
+                        printf("Number = %d", testInteger);
+                        return 0;
+                    }</pre>
+                    <p><b>Output- </b>5</p>
+                
+                <p><b>C Input</b></p>
+                <p>In C programming, scanf() is one of the commonly used function to take input from the user. The scanf() function reads formatted input from the standard input such as keyboards.</p>
+                <p><b>Example 3: Integer Input/Output</b></p>
+                <pre>#include <stdio.h>
+                    int main()
+                    {
+                        int testInteger;
+                        printf("Enter an integer: ");
+                        scanf("%d", &testInteger);  
+                        printf("Number = %d",testInteger);
+                        return 0;
+                    }</pre>
+                <p><b>output</b>Enter an integer: 4
+                    Number = 4</p>
+                    <p>Here, we have used %d format specifier inside the scanf() function to take int input from the user. When the user enters an integer, it is stored in the testInteger variable.</p>
+                    <p><b>Notice, that we have used &testInteger inside scanf(). It is because &testInteger gets the address of testInteger, and the value entered by the user is stored in that address.</b></p>
+                    
+                    <h2>Programming Operators</h2>
+                    <p>An operator is a symbol that operates on a value or a variable. For example: + is an operator to perform addition.
+
+                        C has a wide range of operators to perform various operations.</p>
+                    <p><b>C Arithmetic Operators</b></p>
+                <p>An arithmetic operator performs mathematical operations such as addition, subtraction, multiplication, division etc on numerical values (constants and variables).</p>
+                <p><b>Example 1: Arithmetic Operators</b></p>
+                <pre>// Working of arithmetic operators
+                    #include <stdio.h>
+                    int main()
+                    {
+                        int a = 9,b = 4, c;
+                        
+                        c = a+b;
+                        printf("a+b = %d \n",c);
+                        c = a-b;
+                        printf("a-b = %d \n",c);
+                        c = a*b;
+                        printf("a*b = %d \n",c);
+                        c = a/b;
+                        printf("a/b = %d \n",c);
+                        c = a%b;
+                        printf("Remainder when a divided by b = %d \n",c);
+                        
+                        return 0;
+                    }</pre>
+                
+                <p><b>Output</b></p>
+                <pre>
+                    a+b = 13
+                    a-b = 5
+                    a*b = 36
+                    a/b = 2
+                    Remainder when a divided by b=1</pre>
+                    <p><b>C Increment and Decrement Operators</b></p>
+                    <p>C programming has two operators increment ++ and decrement -- to change the value of an operand (constant or variable) by 1.
+
+                        Increment ++ increases the value by 1 whereas decrement -- decreases the value by 1. These two operators are unary operators, meaning they only operate on a single operand.</p>
+
+                        <p><b>C Assignment Operators</b></p>
+                        <p>An assignment operator is used for assigning a value to a variable. The most common assignment operator is =</p>
+                        <p><b>C Relational Operators</b></p>
+                        <p>A relational operator checks the relationship between two operands. If the relation is true, it returns 1; if the relation is false, it returns value 0.
+
+                            Relational operators are used in decision making and loops.</p>
+                            <p><b>C Logical Operators</b></p>
+                            <p>An expression containing logical operator returns either 0 or 1 depending upon whether expression results true or false. Logical operators are commonly used in decision making in C programming.</p>
+                        <p><b>C Bitwise Operators</b></p>
+                        <p>During computation, mathematical operations like: addition, subtraction, multiplication, division, etc are converted to bit-level which makes processing faster and saves power.
+
+                            Bitwise operators are used in C programming to perform bit-level operations.</p>
+                
+                <h3>Comments</h3>
+                <p>In programming, comments are hints that a programmer can add to make their code easier to read and understand. For example,</p>
+                <pre>#include <stdio.h>
+
+                    int main() {
+                    
+                      // print Hello World to the screen
+                      printf("Hello World");
+                      return 0;
+                    }</pre>
+                    <p><b>output-</b>Hello World</p>
+            </section>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">Learn C++ Programming</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="index.html" class="nav__link nav__logo">
+                        <span class="nav__logo-name">C Programming</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            
+                            <div class="nav__dropdown">
+                                <a href="intro.html" class="nav__link">
+                                    <span class="nav__name">Introduction</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">basic I/O</a>
+                                        <a href="#" class="nav__dropdown-item">Operators</a>
+                                        <a href="#" class="nav__dropdown-item">Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="flow-control.html" class="nav__link">
+                                    <span class="nav__name">Flow Control</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">if...else</a>
+                                        <a href="#" class="nav__dropdown-item">for loop</a>
+                                        <a href="#" class="nav__dropdown-item">while loop</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="function.html" class="nav__link">
+                                    <span class="nav__name">Functions</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">function types</a>
+                                        <a href="#" class="nav__dropdown-item">user-defined function</a>
+                                        <a href="#" class="nav__dropdown-item">Standard Library Functions</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="array.html" class="nav__link">
+                                    <span class="nav__name">Programming Arrays</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming arrays</a>
+                                        <a href="#" class="nav__dropdown-item">multi-dimensional arrays</a>
+                                        <a href="#" class="nav__dropdown-item">arrays & function</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <h1>HISTORY</h1>
+                <p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of the C language include low-level memory access, a simple set of keywords, and a clean style, these features make C language suitable for system programmings like an operating system or compiler development. 
+                    Many later languages have borrowed syntax/features directly or indirectly from the C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on the C language. C++ is nearly a superset of C language (Few programs may compile in C, but not in C++). </p>
+                    <p><b>Beginning with C programming: </b></p>
+                    <p><b>1. Structure of a C program </b></p>
+                    <p>After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.</p>
+                    <p>The components of the above structure are:</p>
+                    <p><b>Header Files Inclusion</b></p>
+                    <p>The first and foremost component is the inclusion of the Header files in a C program. 
+                        A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.
+                        Some of C Header files: </p>
+                        <p>stddef.h – Defines several useful types and macros.</p>
+                        <p>stdint.h – Defines exact width integer types.</p>
+                        <p>stdio.h – Defines core input and output functions</p>
+                        <p>stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation</p>
+                        <p>string.h – Defines string handling functions</p>
+                        <p>math.h – Defines common mathematical functions</p>
+                    <p><b>Main Method Declaration</b></p>
+                    <p>The next part of a C program is to declare the main() function. The syntax to declare the main function is:</p>
+                    <pre>int main(){
+            //code        }
+                    </pre>
+                    <p><b>Variable Declaration</b></p>
+                    <p>The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in the C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.</p>
+                    <p><b>body</b></p>
+                    <p>The body of a function in the C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.</p>
+                    <p><b>Return Statement</b></p>
+                    <p>The last part of any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return type.</p>
+
+                    <div class="container"><div class="line number1 index0 alt2"><code class="preprocessor">
+                        #include &lt;stdio.h&gt;</code></div>
+                        <div class="line number2 index1 alt1"><code class="color1 bold">
+                        int</code> <code class="plain">main(</code><code class="keyword bold">void</code><code class="plain">)</code></div>
+                        <div class="line number3 index2 alt2"><code class="plain">{</code></div>
+                        <div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"HELLO CPP"</code><code class="plain">);</code></div>
+                        <div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div>
+                        <div class="line number6 index5 alt1"><code class="plain">}</code></div></div>
+
+                </section>
+        </main>
+    </body>
+</html>

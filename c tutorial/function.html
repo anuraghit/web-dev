@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">Learn C++ Programming</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="index.html" class="nav__link nav__logo">
+                        <span class="nav__logo-name">C Programming</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            
+                            <div class="nav__dropdown">
+                                <a href="intro.html" class="nav__link">
+                                    <span class="nav__name">Introduction</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">basic I/O</a>
+                                        <a href="#" class="nav__dropdown-item">Operators</a>
+                                        <a href="#" class="nav__dropdown-item">Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="flow-control.html" class="nav__link">
+                                    <span class="nav__name">Flow Control</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">if...else</a>
+                                        <a href="#" class="nav__dropdown-item">for loop</a>
+                                        <a href="#" class="nav__dropdown-item">while loop</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="function.html" class="nav__link">
+                                    <span class="nav__name">Functions</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">function types</a>
+                                        <a href="#" class="nav__dropdown-item">user-defined function</a>
+                                        <a href="#" class="nav__dropdown-item">Standard Library Functions</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="array.html" class="nav__link">
+                                    <span class="nav__name">Programming Arrays</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming arrays</a>
+                                        <a href="#" class="nav__dropdown-item">multi-dimensional arrays</a>
+                                        <a href="#" class="nav__dropdown-item">arrays & function</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <H1>Functions</H1>
+                <p>In this tutorial, you will be introduced to functions (both user-defined and standard library functions) in C programming. Also, you will learn why functions are used in programming.</p>
+                <pre>A function is a block of code that performs a specific task.
+
+                    Suppose, you need to create a program to create a circle and color it. You can create two functions to solve this problem:
+                    
+                    create a circle function
+                    create a color function
+                    Dividing a complex problem into smaller chunks makes our program easy to understand and reuse.</pre>
+                <h1>Types of function</h1>  
+                <p>There are two types of function in C programming:</p>
+                <p><b>1.Standard library functions</b></p>
+                <p><b>2.User-defined function</b></p>
+                  
+                <h2>Standard library functions</h2>
+                <pre>The standard library functions are built-in functions in C programming.
+
+                    These functions are defined in header files. For example,
+                    
+                    The printf() is a standard library function to send formatted output to the screen (display output on the screen). This function is defined in the stdio.h header file.
+                    Hence, to use the printf()function, we need to include the stdio.h header file using #include <stdio.h>.
+                    The sqrt() function calculates the square root of a number. The function is defined in the math.h header file.  </pre>
+                    <p><b>How user-defined function works?</b></p>
+                    <pre>
+                        #include <stdio.h>
+                            void functionName()
+                            {
+                                ... .. ...
+                                ... .. ...
+                            }
+                            
+                            int main()
+                            {
+                                ... .. ...
+                                ... .. ...
+                            
+                                functionName();
+                                
+                                ... .. ...
+                                ... .. ...
+                            }
+                    </pre>
+                    <p>The execution of a C program begins from the main() function.
+
+                        When the compiler encounters functionName();, control of the program jumps to</p>
+                    <p>And, the compiler starts executing the codes inside functionName().
+
+                        The control of the program jumps back to the main() function once code inside the function definition is executed.</p>
+                    <p>
+                        Note, function names are identifiers and should be unique.
+
+This is just an overview of user-defined functions. Visit these pages to learn more on:
+
+User-defined Function in C programming
+Types of user-defined Functions
+                    </p> 
+                    <p><b>Advantages of user-defined function</b></p>
+                    <pre>
+                        The program will be easier to understand, maintain and debug.
+                        Reusable codes that can be used in other programs
+                        A large program can be divided into smaller modules. Hence, a large project can be divided among many programmers.
+                    </pre>
+
+            </section>
+        </main>
+
+    </body>
+</html>

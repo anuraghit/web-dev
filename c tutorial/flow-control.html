@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">Learn C++ Programming</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="index.html" class="nav__link nav__logo">
+                        <span class="nav__logo-name">C Programming</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            
+                            <div class="nav__dropdown">
+                                <a href="intro.html" class="nav__link">
+                                    <span class="nav__name">Introduction</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">basic I/O</a>
+                                        <a href="#" class="nav__dropdown-item">Operators</a>
+                                        <a href="#" class="nav__dropdown-item">Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="flow-control.html" class="nav__link">
+                                    <span class="nav__name">Flow Control</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">if...else</a>
+                                        <a href="#" class="nav__dropdown-item">for loop</a>
+                                        <a href="#" class="nav__dropdown-item">while loop</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="function.html" class="nav__link">
+                                    <span class="nav__name">Functions</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">function types</a>
+                                        <a href="#" class="nav__dropdown-item">user-defined function</a>
+                                        <a href="#" class="nav__dropdown-item">Standard Library Functions</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="array.html" class="nav__link">
+                                    <span class="nav__name">Programming Arrays</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming arrays</a>
+                                        <a href="#" class="nav__dropdown-item">multi-dimensional arrays</a>
+                                        <a href="#" class="nav__dropdown-item">arrays & function</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <H1>flow-control</H1>
+                <h2>if...else Statement</h2>
+                <p>The syntax of the if statement in C programming is:</p>
+                <pre>
+                    if (test expression) 
+                    {
+                       // code
+                    }
+                </pre>
+                <p><b>How if statement works?</b></p>
+                <pre>
+                    The if statement evaluates the test expression inside the parenthesis ().
+
+                    If the test expression is evaluated to true, statements inside the body of if are executed.
+                    If the test expression is evaluated to false, statements inside the body of if are not executed.</pre>
+                <p><b>Example 1: if statement</b></p>
+                <pre>// Program to display a number if it is negative
+
+                    #include <stdio.h>
+                    int main() {
+                        int number;
+                    
+                        printf("Enter an integer: ");
+                        scanf("%d", &number);
+                    
+                        // true if number is less than 0
+                        if (number < 0) {
+                            printf("You entered %d.\n", number);
+                        }
+                    
+                        printf("The if statement is easy.");
+                    
+                        return 0;
+                    }</pre>
+                    <pre><b>output-</b>Enter an integer: -2
+                        You entered -2.
+                        The if statement is easy.</pre>
+            <h2>for loop</h2>
+            <pre>
+                In programming, a loop is used to repeat a block of code until the specified condition is met.
+
+                C programming has three types of loops:
+                
+                for loop
+                while loop
+                do...while loop
+                We will learn about for loop in this tutorial. In the next tutorial, we will learn about while and do...while loop.</pre>
+            
+            <p>The syntax of the for loop is:</p>
+            <pre>
+                for (initializationStatement; testExpression; updateStatement)
+                {
+                    // statements inside the body of loop
+                }</pre>
+            <p><b>How for loop works?</b></p>
+            <pre>
+                The initialization statement is executed only once.
+                Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+                However, if the test expression is evaluated to true, statements inside the body of the for loop are executed, and the update expression is updated.
+                Again the test expression is evaluated.
+                This process goes on until the test expression is false. When the test expression is false, the loop terminates.</pre>
+                <p><b>Example 1: for loop</b></p>
+                <pre>
+                    // Print numbers from 1 to 10
+                    #include <stdio.h>
+                    
+                    int main() {
+                      int i;
+                    
+                      for (i = 1; i < 11; ++i)
+                      {
+                        printf("%d ", i);
+                      }
+                      return 0;
+                    }
+                    </pre>
+                    <pre><b>output-</b>1 2 3 4 5 6 7 8 9 10</pre>
+            <h2>while loop</h2>
+            <pre>
+                In programming, loops are used to repeat a block of code until a specified condition is met.
+
+                C programming has three types of loops.
+                
+                for loop
+                while loop
+                do...while loop
+                In the previous tutorial, we learned about for loop. In this tutorial, we will learn about while and do..while loop.</pre>
+            <p>The syntax of the while loop is:</p>
+            <pre>
+                while (testExpression) {
+                // the body of the loop 
+              }</pre>
+              <p><b>Example 1: while loop</b></p>
+              <pre>
+                // Print numbers from 1 to 5
+
+                #include <stdio.h>
+                int main() {
+                  int i = 1;
+                    
+                  while (i <= 5) {
+                    printf("%d\n", i);
+                    ++i;
+                  }
+                
+                  return 0;
+                }
+              </pre>
+              <pre><b>Output-</b>
+                1
+                2
+                3
+                4
+                5</pre>
+                
+            </section>
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

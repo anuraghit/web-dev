@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">Learn C++ Programming</a>
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="index.html" class="nav__link nav__logo">
+                        <span class="nav__logo-name">C Programming</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            
+                            <div class="nav__dropdown">
+                                <a href="intro.html" class="nav__link">
+                                    <span class="nav__name">Introduction</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">basic I/O</a>
+                                        <a href="#" class="nav__dropdown-item">Operators</a>
+                                        <a href="#" class="nav__dropdown-item">Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="flow-control.html" class="nav__link">
+                                    <span class="nav__name">Flow Control</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">if...else</a>
+                                        <a href="#" class="nav__dropdown-item">for loop</a>
+                                        <a href="#" class="nav__dropdown-item">while loop</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="function.html" class="nav__link">
+                                    <span class="nav__name">Functions</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">function types</a>
+                                        <a href="#" class="nav__dropdown-item">user-defined function</a>
+                                        <a href="#" class="nav__dropdown-item">Standard Library Functions</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="array.html" class="nav__link">
+                                    <span class="nav__name">Programming Arrays</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming arrays</a>
+                                        <a href="#" class="nav__dropdown-item">multi-dimensional arrays</a>
+                                        <a href="#" class="nav__dropdown-item">arrays & function</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="pointer.html" class="nav__link">
+                                    <span class="nav__name">Programming Pointers</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">pointers</a>
+                                        <a href="#" class="nav__dropdown-item">pointers and arrays</a>
+                                        <a href="#" class="nav__dropdown-item">pointers and function</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="string.html" class="nav__link">
+                                    <span class="nav__name">Programming Strings</span>
+                                </a>
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">programming strings</a>
+                                        <a href="#" class="nav__dropdown-item">string functions</a>
+                                        <a href="#" class="nav__dropdown-item">string examples</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <H1>Pointers</H1>
+            </section>
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
